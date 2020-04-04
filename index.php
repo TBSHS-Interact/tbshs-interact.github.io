@@ -16,12 +16,7 @@
             require("./Pages/contact.html");
         break;
         default:
-            if ($_GET["page"] == "") {
-                include("./Pages/index.html");
-            } else {
-                header("HTTP/1.0 404 Not Found");
-                include("./Pages/404.html");
-            }
+            include("./Pages/index.html");
         break;
     }
 
