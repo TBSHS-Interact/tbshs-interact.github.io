@@ -1,7 +1,7 @@
 // @ts-nocheck
 class Gallery {
     constructor () {
-        this.captions = [ "Bag_Packing_at_Tesco", "Bag_Packing_for_Rotary", "Comedy_at_Showcase_2019", "Former_Student_returns_for_Showcase_2019", "Velocity_at_Showcase_2019" ]; // Names of images wanted from src/img/Gallery folder
+        this.captions = [ "Bag_Packing_at_Tesco", "Bag_Packing_for_Rotary", "Comedy_at_Showcase_2019", "Former_student_returns_for_Showcase_2019", "Velocity_at_Showcase_2019" ]; // Names of images wanted from src/img/Gallery folder
         this.images = this.captions.map(caption => `/Interact/Images/gallery/${caption}.jpg`); // Maps captions to file paths
         this.slideIndex = 1;
         this.interval = setInterval(() => this.plusSlides(1), 5000);
