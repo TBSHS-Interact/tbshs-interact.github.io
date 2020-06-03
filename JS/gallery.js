@@ -27,7 +27,7 @@ class Gallery {
         document.write(/*html*/`</div>`); // Ends slideshow div
         document.write(/*html*/`<br>`); // New line before dots
 
-        document.write(/*html*/`<div style="text-align:center">`); // Starts the dots div
+        document.write(/*html*/`<div style="text-align:center;">`); // Starts the dots div
         for (let i = 0; i < this.images.length; i++) document.write(/*html*/`<span class="dot" onclick="gallery.currentSlide(${i + 1})"></span>`); // Writes each dot
         document.write(/*html*/`</div>`); // Ends the dots div
     }

@@ -8,7 +8,7 @@
 /* Images */
 .image {
     width: auto; 
-    max-width: 100%;
+    max-width: 90%;
     height: 500px; 
 }
 
@@ -23,6 +23,7 @@
     position: absolute;
     top: 50%;
     width: auto;
+    max-width: 100%;
     margin-top: -22px;
     padding: 16px;
     color: var(--main-yellow-colour);
@@ -39,17 +40,10 @@
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
 /* Caption text */
 .text {
     position: absolute;
     width: 100%;
-    padding: 8px 12px;
-    bottom: 4px;
     text-align: center;
 }
 
@@ -58,7 +52,7 @@
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin: 30px 2px;
     background-color: var(--main-yellow-colour);
     opacity: 0.8;
     border-radius: 50%;

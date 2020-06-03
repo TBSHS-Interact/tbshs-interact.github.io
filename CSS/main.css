@@ -6,6 +6,7 @@
 body {
     background: black;
     color: white;
+    margin: 0px;
 }
 
 a {
@@ -16,7 +17,7 @@ a {
 /* Events */
 .eventIconContainer {
     float: left;
-    padding: 30px;
+    padding: 10px 30px;
 }
 
 .eventIcon {
@@ -27,42 +28,40 @@ a {
 }
 
 /* Fonts */
-h1 { 
+h1, h2, h3, p {
     font-family: Lato; 
+    margin: 10px;
+    color: white;
+}
+
+h1 {
     font-size: 34px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: bold; 
-    line-height: 36px; 
-    color: white;
+    line-height: 36px;
 } 
 
-h2 { 
-    font-family: Lato; 
+h2 {
     font-size: 29px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: bold; 
-    line-height: 30px; 
-    color: white;
+    line-height: 30px;
 } 
 
-h3 { 
-    font-family: Lato; 
+h3 {
     font-size: 24px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: bold; 
-    line-height: 25px; 
-    color: white;
+    line-height: 25px;
 } 
 
-p { 
-    font-family: Lato; 
+p {
     font-size: 24px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 400; 
-    line-height: 30px; 
-    color: white;
+    line-height: 30px;
 }
