@@ -1,6 +1,4 @@
 document.write(/*html*/`
-<link rel="stylesheet" type="text/css" href="CSS/header.css">
-<div class="banner"></div>
 <div class="nav">
     <ul>
         <li>
