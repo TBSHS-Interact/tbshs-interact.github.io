@@ -10,11 +10,6 @@ body {
     margin: 0px;
 }
 
-a {
-    color: var(--main-yellow);
-    text-decoration: none;
-}
-
 /* Events */
 .eventIcon {
     max-height: 150px;
@@ -63,4 +58,9 @@ p {
     font-size: 24px;
     line-height: 30px;
     font-weight: 400;
+}
+
+a {
+    color: var(--main-yellow);
+    text-decoration: none;
 }
