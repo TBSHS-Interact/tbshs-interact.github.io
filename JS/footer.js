@@ -1,1 +1,4 @@
-document.write(/*html*/`</body></html>`);
+document.write(/*html*/`
+        <br><br>
+    </body>
+</html>`);
