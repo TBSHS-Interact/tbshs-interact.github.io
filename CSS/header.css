@@ -77,7 +77,7 @@ li.dropdown {
 }
 
 .twitter:hover {
-    background-color: #008aee;
+    background-color: #008acc;
     transition-duration: 0.2s;
 }
 
@@ -88,6 +88,16 @@ li.dropdown {
 
 .facebook:hover {
     background-color: #193776;
+    transition-duration: 0.2s;
+}
+
+.youtube {
+    background-color: #ff0000;
+    transition-duration: 0.2s;
+}
+
+.youtube:hover {
+    background-color: #cc0000;
     transition-duration: 0.2s;
 }
 

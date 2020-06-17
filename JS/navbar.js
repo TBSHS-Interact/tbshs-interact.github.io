@@ -20,6 +20,7 @@ document.write(/*html*/`
                 <a href="/contact"><h3>Contact Information</h3></a>
                 <a class="twitter" href="https://twitter.com/TBSHSInteract"><h3>Twitter</h3></a>
                 <a class="facebook" href="https://fb.me/TBSHSInteract"><h3>Facebook</h3></a>
+                <a class="youtube" href="https://www.youtube.com/channel/UCSaaFS8LzdlEt4mFirY4-qg/featured"><h3>YouTube</h3></a>
             </div>
         </li>
     </ul>
