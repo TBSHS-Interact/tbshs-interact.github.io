@@ -20,6 +20,10 @@ const events = {
             image: "mlk.jpeg",
             text: "<a>Monday, 20 January 2020</a> was a day to remember how Martin Luther King fought, peacfully, for his rights. Martin Luther King is well known for his civil rights campaign in America in the 1960s. He is perhaps best known for his \"I have a dream\" speech."
         },
+        "Tesco Bag Packing with Rotary": {
+            image: "gallery/Bag_Packing_for_Rotary.jpg",
+            text: "For thirteen hours accross <a>Saturday, 14 December 2019</a> and <a> Sunday, 15 December 2019</a>, a large number of students took part in bag packing at Tesco in Bishop's Stortford to help the Rotary Club raise money towards their Christmas Food Parcels to help less fortunate families at this time.\nThis event is one we do most years in Waitrose and Tesco, and always has an outstanding turnout of students."
+        },
         "Showcase 2019": {
             image: "logo_showcase-2019.png",
             text: "Our annual talent show took place on <a>Friday, 13 December, at 19: 00</a>, in the school hall. All money raised went to the Food Bank, the Night Shelter and St. Michael's Church.",
