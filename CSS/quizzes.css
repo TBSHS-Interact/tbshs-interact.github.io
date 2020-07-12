@@ -1,0 +1,11 @@
+#quizzes {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+    align-content: space-evenly;
+}
+
+.quiz {
+    width: 100%;
+    height: 100%;
+}
