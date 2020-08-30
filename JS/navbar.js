@@ -14,9 +14,6 @@ document.write(/*html*/`
                 <a href="/environment"><h3>Environmental Campaign</h3></a>
             </div>
         </li>
-        <li>
-            <a href="/quizzes"><h2>Quizzes</h2></a>
-        </li>
         <li class="dropdown" style="float: right;">
             <a href="/contact" class="dropbtn"><h2>Contact Us</h2></a>
             <div class="dropdown-content">
