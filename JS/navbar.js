@@ -58,7 +58,7 @@ document.write(/*html*/`
 
     <div id="nav-mobile">
         <div id="nav-dropdown">
-            <a><h2>☰</h2></a>
+            <a href=""><h2>☰</h2></a>
             <div id="nav-dropdown-content">
                 <a class="nav-list-item" href="/"><h2>Home</h2></a>
                 <a class="nav-list-item" href="/news"><h2>News</h2></a>
