@@ -64,6 +64,7 @@ document.write(/*html*/`
                 <a class="nav-list-item" href="/news"><h2>News</h2></a>
                 <a class="nav-list-item" href="/events"><h2>Events</h2></a>
                 <a class="nav-list-item" href="/environment"><h2>Environment</h2></a>
+                <a class="nav-list-item" href="/contact"><h2>Contact</h2></a>
             </div>
         </div>
     </div>

@@ -67,7 +67,7 @@
 }
 /* .nav-social-link h3 { float: right; } */
 /* Mobile Nav */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 885px) {
     #nav { display: none; }
     #nav-mobile {
         display: block; 
