@@ -1,4 +1,14 @@
 const events = {
+    "2020 - 2021": {
+        "TBSHS Remembrance Service": {
+            image: "logo_poppy-appeal.png",
+            text: "2020 has been a difficult year for us all. Due to COVID-19 restrictions, we were unable to sell poppies in school as we usually would. This did not, however, stop us from holding our traditional Remembrance Day service on <a>Wednesday, 11 November 2020, at 11:00</a>. The service took place outside this year, and ended with a two minutes silence."
+        },
+        "Food Bank Collection": {
+            image: "logo_food-bank.jpg",
+            text: "To mark the end of the first half term of our 2020-2021 school year, students were encouraged to make donation to the Bishop's Stortford Food Bank. Due to the effects of COVID-19 on the world and our nation, manny people require services such as the food bank more than ever. The student body came together on <a>Friday, 23 October 2020</a> to donate over three shopping trollies worth of items."
+        }
+    },
     "2019 - 2020": {
         "International Women's Day": {
             image: "logo_iwd.png",
@@ -26,11 +36,11 @@ const events = {
         },
         "Showcase 2019": {
             image: "logo_showcase-2019.png",
-            text: "Our annual talent show took place on <a>Friday, 13 December, at 19: 00</a>, in the school hall. All money raised went to the Food Bank, the Night Shelter and St. Michael's Church.",
+            text: "Our annual talent show took place on <a>Friday, 13 December 2019, at 19: 00</a>, in the school hall. All money raised went to the Food Bank, the Night Shelter and St. Michael's Church.",
         },
         "TBSHS Poppy Appeal": {
             image: "logo_poppy-appeal.png",
-            text: "It was that time of year again. A time to remember those who have fought and died in service of our country. Many students bought a poppy to show their appreciation for the people who have fought for us and our freedom. Our annual rememberance service took place on <a>Monday, 11 November, at 11:00</a>."
+            text: "It was that time of year again. A time to remember those who have fought and died in service of our country. Many students bought a poppy to show their appreciation for the people who have fought for us and our freedom. Our annual rememberance service took place on <a>Monday, 11 November 2019, at 11:00</a>."
         },
         "Wear It Blue for Mental Health": {
             image: "logo_mind.png",

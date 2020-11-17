@@ -12,6 +12,5 @@ document.write(/*html*/`
     </head>
     <body>
         <link rel="stylesheet" type="text/css" href="CSS/header.css">
-        <div id="banner"></div>
         <script src="JS/navbar.js"></script>
 `);
