@@ -2,7 +2,7 @@ const events = {
     "2020 - 2021": {
         "TBSHS Remembrance Service": {
             image: "logo_poppy-appeal.png",
-            text: "2020 has been a difficult year for us all. Due to COVID-19 restrictions, we were unable to sell poppies in school as we usually would. This did not, however, stop us from holding our traditional Remembrance Day service on <a>Wednesday, 11 November 2020, at 11:00</a>. The service took place outside this year, and ended with a two minutes silence."
+            text: "2020 has been a difficult year for us all. Due to COVID-19 restrictions, we were unable to sell poppies in school as we usually would. This did not, however, stop us from holding our traditional Remembrance Day service on <a>Wednesday, 11 November 2020, at 11:00</a>. The service took place outside this year, and ended with a two minutes silence. Despite being unable to sell poppies this year, a total of £800.50 was raised via online donations."
         },
         "Food Bank Collection": {
             image: "logo_food-bank.jpg",
