@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Carousel } from "react-bootstrap";
+import ImageGallery, { ReactImageGalleryItem } from "react-image-gallery";
 import Gallery1 from "../Images/Gallery/1.jpg";
 import Gallery2 from "../Images/Gallery/2.jpg";
 import Gallery3 from "../Images/Gallery/3.jpg";
@@ -10,37 +10,22 @@ import Gallery7 from "../Images/Gallery/7.jpg";
 import Gallery8 from "../Images/Gallery/8.jpg";
 import Gallery9 from "../Images/Gallery/9.jpg";
 
-class Image extends Component {
-    constructor(public readonly props: { src: string; caption: string; }) {
-        super(props);
-    }
+const images: ReactImageGalleryItem[] = [
+    { original: Gallery1, thumbnail: Gallery1, description: "Bag packing at Tesco" },
+    { original: Gallery2, thumbnail: Gallery2, description: "Bag packing for Rotary" },
+    { original: Gallery3, thumbnail: Gallery3, description: "Comedy at Showcase 2019" },
+    { original: Gallery4, thumbnail: Gallery4, description: "Former student returns for Showcase 2019" },
+    { original: Gallery5, thumbnail: Gallery5, description: "Velocity at Showcase 2019" },
+    { original: Gallery6, thumbnail: Gallery6, description: "Food Bank Donations" },
+    { original: Gallery7, thumbnail: Gallery7, description: "TBSHS Remembrance Service" },
+    { original: Gallery8, thumbnail: Gallery8, description: "Lower school at Remembrance Service" },
+    { original: Gallery9, thumbnail: Gallery9, description: "Upper school at Remembrance Service" }
+];
 
+export default class Gallery extends Component {
     public render(): JSX.Element {
         return (
-            <Carousel.Item>
-                <img className="d-block w-100" src={this.props.src} alt={this.props.caption} style={{maxHeight: "50%"}} />
-                <Carousel.Caption>
-                    <p>{this.props.caption}</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-        )
-    }
-}
-
-export default class Header extends Component {
-    public render(): JSX.Element {
-        return (
-            <Carousel>
-                <Image src={Gallery1} caption="Bag packing at Tesco" />
-                <Image src={Gallery2} caption="Bag packing for Rotary" />
-                <Image src={Gallery3} caption="Comedy at Showcase 2019" />
-                <Image src={Gallery4} caption="Former student returns for Showcase 2019" />
-                <Image src={Gallery5} caption="Velocity at Showcase 2019" />
-                <Image src={Gallery6} caption="Food Bank Donations" />
-                <Image src={Gallery7} caption="TBSHS Remembrance Service" />
-                <Image src={Gallery8} caption="Lower school at Remembrance Service" />
-                <Image src={Gallery9} caption="Upper school at Remembrance Service" />
-            </Carousel>
+            <ImageGallery items={images} showPlayButton={false} showFullscreenButton={false} showIndex={true} autoPlay={true} />
         );
     }
 }
