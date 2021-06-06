@@ -1,6 +1,6 @@
 {
     "name": "tbshs-interact.github.io",
-    "homepage": "tbshs-interact.github.io",
+    "homepage": "https://tbshs-interact.github.io",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -30,7 +30,7 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "predeploy": "npm run build",
-        "deploy": "git commit -a -m \"Update\" && git push && gh-pages -d build"
+        "deploy": "git add . && git commit -a -m \"Update\" && git push && gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
