@@ -13,7 +13,6 @@ export default class App extends Component {
         document.title = "TBSHS Interact";
         return (
             <HashRouter>
-                {/* <Header /> The header will be added to every page so it gets reloaded when you switch page. */}
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/News" component={News} />
@@ -22,6 +21,7 @@ export default class App extends Component {
                     <Route exact path="/Contact" component={Contact} />
                     <Route component={Error} />
                 </Switch>
+                <footer style={{ height: "10px" }} />
             </HashRouter>
         );
     }

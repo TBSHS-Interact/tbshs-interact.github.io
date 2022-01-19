@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ImageGallery, { ReactImageGalleryItem } from "react-image-gallery";
+import { Carousel, Image } from "react-bootstrap";
 import Gallery1 from "../Images/Gallery/1.jpg";
 import Gallery2 from "../Images/Gallery/2.jpg";
 import Gallery3 from "../Images/Gallery/3.jpg";
@@ -10,22 +10,29 @@ import Gallery7 from "../Images/Gallery/7.jpg";
 import Gallery8 from "../Images/Gallery/8.jpg";
 import Gallery9 from "../Images/Gallery/9.jpg";
 
-const images: ReactImageGalleryItem[] = [
-    { original: Gallery1, thumbnail: Gallery1, description: "Bag packing at Tesco" },
-    { original: Gallery2, thumbnail: Gallery2, description: "Bag packing for Rotary" },
-    { original: Gallery3, thumbnail: Gallery3, description: "Comedy at Showcase 2019" },
-    { original: Gallery4, thumbnail: Gallery4, description: "Former student returns for Showcase 2019" },
-    { original: Gallery5, thumbnail: Gallery5, description: "Velocity at Showcase 2019" },
-    { original: Gallery6, thumbnail: Gallery6, description: "Food Bank Donations" },
-    { original: Gallery7, thumbnail: Gallery7, description: "TBSHS Remembrance Service" },
-    { original: Gallery8, thumbnail: Gallery8, description: "Lower school at Remembrance Service" },
-    { original: Gallery9, thumbnail: Gallery9, description: "Upper school at Remembrance Service" }
+const images: Array<{ caption: string; src: string; }> = [
+    { caption: "Bag packing at Tesco", src: Gallery1 },
+    { caption: "Bag packing for Rotary", src: Gallery2 },
+    { caption: "Comedy at Showcase 2019", src: Gallery3 },
+    { caption: "Former student returns for Showcase 2019", src: Gallery4 },
+    { caption: "Velocity at Showcase 2019", src: Gallery5 },
+    { caption: "Food Bank Donations", src: Gallery6 },
+    { caption: "TBSHS Remembrance Service", src: Gallery7 },
+    { caption: "Lower school at Remembrance Service", src: Gallery8 },
+    { caption: "Upper school at Remembrance Service", src: Gallery9 }
 ];
 
 export default class Gallery extends Component {
     public render(): JSX.Element {
         return (
-            <ImageGallery items={images} showPlayButton={false} showFullscreenButton={false} showIndex={true} autoPlay={true} />
+            <Carousel nextLabel="" prevLabel="">
+                {images.map((image) => (<Carousel.Item style={{ height: "500px", textAlign: "center" }}>
+                    <Image src={image.src} alt={image.caption} height="100%" />
+                    <Carousel.Caption>
+                        <h1>{image.caption}</h1>
+                    </Carousel.Caption>
+                </Carousel.Item>))}
+            </Carousel>
         );
     }
 }
