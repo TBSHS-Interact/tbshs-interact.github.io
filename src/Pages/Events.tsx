@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Container } from "react-bootstrap";
-import Header from "../Components/Header";
 import HolocaustMemorialDay from "../Images/Events/holocaust-memorial-day.jpg";
 import CazFestLogo from "../Images/Events/logo_CazFest.jpeg";
 import FoodBankLogo from "../Images/Events/logo_food-bank.jpg";
@@ -15,8 +14,6 @@ import WorldCancerDay from "../Images/Events/world-cancer-day.jpg";
 
 export default class Events extends Component {
     public render(): JSX.Element {
-        document.title = "TBSHS Interact | Events";
-
         const events: { [year: string]: { [event: string]: { image: string; text: string; } } } = {
             "2020 - 2021": {
                 "Sixth Form Charities Day 2021": {
@@ -73,38 +70,35 @@ export default class Events extends Component {
         };
 
         return (
-            <>
-                <Header />
-                <Container style={{ width: "90%" }}>
-                    <h1>Events</h1>
-                    <p>To keep up with our latest Events, follow us on <a href="https://twitter.com/TBSHSInteract">Twitter</a> and <a href="https://fb.me/TBSHSInteract">Facebook</a>.</p>
-                    <br /><br />
-                    {Object.keys(events).map((year: string) => (
-                        <table>
+            <Container style={{ width: "90%" }}>
+                <h1>Events</h1>
+                <p>To keep up with our latest Events, follow us on <a href="https://twitter.com/TBSHSInteract">Twitter</a> and <a href="https://fb.me/TBSHSInteract">Facebook</a>.</p>
+                <br /><br />
+                {Object.keys(events).map((year: string) => (
+                    <table>
+                        <tr>
+                            <h2>{year}</h2>
+                        </tr>
+                        {Object.keys(events[year]).map((event) => (
                             <tr>
-                                <h2>{year}</h2>
+                                <td>
+                                    <img className="eventIcon" src={events[year][event].image} alt={events[year][event].text} style={{
+                                        maxHeight: "150px",
+                                        maxWidth: "150px",
+                                        height: "auto",
+                                        width: "auto",
+                                        padding: "2px"
+                                    }} />
+                                </td>
+                                <td>
+                                    <h3>{event}</h3>
+                                    <p dangerouslySetInnerHTML={{ __html: events[year][event].text.replace(/<a>/g, "<a href=''>") }}></p>
+                                </td>
                             </tr>
-                            {Object.keys(events[year]).map((event) => (
-                                <tr>
-                                    <td>
-                                        <img className="eventIcon" src={events[year][event].image} alt={events[year][event].text} style={{
-                                            maxHeight: "150px",
-                                            maxWidth: "150px",
-                                            height: "auto",
-                                            width: "auto",
-                                            padding: "2px"
-                                        }} />
-                                    </td>
-                                    <td>
-                                        <h3>{event}</h3>
-                                        <p dangerouslySetInnerHTML={{ __html: events[year][event].text.replace(/<a>/g, "<a href=''>") }}></p>
-                                    </td>
-                                </tr>
-                            ))}
-                        </table>
-                    ))}
-                </Container>
-            </>
+                        ))}
+                    </table>
+                ))}
+            </Container>
         );
     }
 }

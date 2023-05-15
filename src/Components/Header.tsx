@@ -17,14 +17,15 @@ export default class Header extends Component {
                 }} />
                 <Navbar bg={window.location.href.split("#")[1] === "/environment" ? "secondary" : "primary"} variant="dark" sticky="top" expand="lg" id="navbar">
                     <Container>
-                        <Navbar.Brand href="#">TBSHS Interact</Navbar.Brand>
+                        <Navbar.Brand href="/">TBSHS Interact</Navbar.Brand>
                         <Navbar.Toggle/>
-                        <Navbar.Collapse className="justify-content-end">
+                        <Navbar.Collapse>
                             <Nav className="ml-auto">
-                                <Nav.Link href="#news">News</Nav.Link>
-                                <Nav.Link href="#events">Events</Nav.Link>
-                                <Nav.Link href="#environment">Environment</Nav.Link>
-                                <Nav.Link href="#contact">Contact</Nav.Link>
+                                <Nav.Link href="/">Home</Nav.Link>
+                                <Nav.Link href="/news">News</Nav.Link>
+                                <Nav.Link href="/events">Events</Nav.Link>
+                                <Nav.Link href="/environment">Environment</Nav.Link>
+                                <Nav.Link href="/contact">Contact</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import { Container } from "react-bootstrap";
-import Header from "../Components/Header";
 
 export default class News extends Component {
     public render(): JSX.Element {
-        document.title = "TBSHS Interact | News";
-
         const news = [{
             date: <h1>Wednesday, 17 June 2020</h1>,
             desc: <p>Our new YouTube channel launched today <a href="https://www.youtube.com/channel/UCSaaFS8LzdlEt4mFirY4-qg/featured">@TBSHSInteract</a>.<br />We will be streaming quizzes weekly, open to everyone.</p>
@@ -21,14 +18,11 @@ export default class News extends Component {
         }];
 
         return (
-            <>
-                <Header />
-                <Container style={{ width: "90%" }}>
-                    <h1>News</h1>
-                    <br />
-                    {news.map((item) => <>{item.date}{item.desc}<br/></>)}
-                </Container>
-            </>
+            <Container style={{ width: "90%" }}>
+                <h1>News</h1>
+                <br />
+                {news.map((item) => <>{item.date}{item.desc}<br/></>)}
+            </Container>
         );
     }
 }
